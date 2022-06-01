@@ -42,6 +42,7 @@ const Product = () => {
       const types = {
         pname:"pname",
         date: 'date',
+        time: 'time'
       };
       const sortProperty = types[type];
       const sorted = [...product].sort((a, b) => b[sortProperty] < a[sortProperty] ? 1 : -1);
@@ -73,12 +74,12 @@ const Product = () => {
                   <div className="col-md-8 col-sm-12">
                     <div id="filters" className="button-group">
                       <button className="btn btn-primary" onClick={() => setProduct(products)}>All Products</button>
-                      <button className="btn btn-primary" onClick={() => filterProduct("Pants")}>Pents</button>
+                      <button className="btn btn-primary" onClick={() => filterProduct("Pants")}>Pants</button>
                       <button className="btn btn-primary" onClick={() => filterProduct("Jacket")}>Jackets</button>
                       <button className="btn btn-primary" onClick={() => filterProduct("Sneaker")}>Sneakers</button>
                       <button className="btn btn-primary" onClick={() => filterProduct("Bag")}>Bags</button>
                       <select onChange={(e) => setSortType(e.target.value)}> 
-                        {/* <option value="">Most Recent</option> */}
+                        <option value="time">Most Recent</option>
                         <option value="pname">Sort by Name</option>
                         <option value="date">Sort by Date</option>
                       </select>
@@ -109,6 +110,7 @@ const Product = () => {
                           <h4> {element.category} </h4>
                           <h6> {element.price} </h6>
                           <p>{element.date}</p>
+                          <p>{element.time}</p>
                           <button className="btn btn-primary" onClick={() => handleClick(element.id)}>Detail</button>
                           <button className="btn btn-primary" onClick={() =>handleDelete(element.id)}>Delete</button>
                         </div>

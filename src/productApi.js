@@ -6,7 +6,8 @@ const products = [
         category: "Pants",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$15.00",
-        date: "14/5/2022"
+        date: "14/5/2022",
+        time: "8:12"
         
     },
     {
@@ -16,7 +17,8 @@ const products = [
         category: "Sneaker",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$25.00",
-        date: "15/5/2022"
+        date: "15/5/2022",
+        time: "6:15"
     
     },
     {
@@ -26,7 +28,8 @@ const products = [
         category: "Jacket",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$42.00",
-        date: "22/5/2022"
+        date: "22/5/2022",
+        time: "2:49"
     },
     {
         id: 4,
@@ -35,7 +38,8 @@ const products = [
         category: "Sneaker",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$23.00",
-        date: "18/5/2022"
+        date: "18/5/2022",
+        time: "10:22"
     },
     {
         id: 5,
@@ -44,7 +48,8 @@ const products = [
         category: "Bag",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$20.00",
-        date: "11/5/2022"
+        date: "11/5/2022",
+        time: "7:48"
     },
     {
         id: 6,
@@ -53,7 +58,8 @@ const products = [
         category: "Jacket",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$42.00",
-        date: "28/55/2022"
+        date: "28/55/2022",
+        time: "3:45"
     },
     {
         id: 7,
@@ -62,7 +68,8 @@ const products = [
         category: "Pants",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$17.00",
-        date: "19/5/2022"
+        date: "19/5/2022",
+        time: "1:55"
     },
     {
         id: 8,
@@ -71,7 +78,8 @@ const products = [
         category: "Pants",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$17.00",
-        date: "29/5/2022"
+        date: "29/5/2022",
+        time: "11:11"
     },
     {
         id: 9,
@@ -80,7 +88,8 @@ const products = [
         category: "Bag",
         description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
         price: "$32.00",
-        date: "23/5/2022"
+        date: "23/5/2022",
+        time: "5:25"
     },
     
     
