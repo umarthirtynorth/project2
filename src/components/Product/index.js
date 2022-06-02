@@ -21,11 +21,16 @@ const Product = () => {
     setProduct(updatedProducts);
   }
 
+  // Detail product
+
   const handleClick = (id) => {
     navigate("/product/"+ id +"/detail")
   }
 
+  //  Delete product
+
   const handleDelete = (id) => {
+    alert("Are you sure you want delete product")
     const newPro = product.filter((remove) => {
       return remove.id !== id;
     });
@@ -36,6 +41,8 @@ const Product = () => {
   // const strAscending = [...product].sort((a, b) =>
   //   a.pname > b.pname ? 1 : -1,
   // );
+
+  // Sorting product 
 
   useEffect(() => {
     const sortArray = type => {
@@ -50,6 +57,8 @@ const Product = () => {
     };
     sortArray(sortType);
   }, [sortType]);
+
+  // search field
 
   useEffect(() => {
     const filProduct = products.filter((el, idx) => {
@@ -111,8 +120,14 @@ const Product = () => {
                           <h6> {element.price} </h6>
                           <p>{element.date}</p>
                           <p>{element.time}</p>
-                          <button className="btn btn-primary" onClick={() => handleClick(element.id)}>Detail</button>
-                          <button className="btn btn-primary" onClick={() =>handleDelete(element.id)}>Delete</button>
+                          <button 
+                            className="btn btn-primary" 
+                            onClick={() => handleClick(element.id)}
+                          >Detail</button>
+                          <button 
+                            className="btn btn-primary" 
+                            onClick={() =>handleDelete(element.id)}
+                          >Delete</button>
                         </div>
                       
                     </div>
